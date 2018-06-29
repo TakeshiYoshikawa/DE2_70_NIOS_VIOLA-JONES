@@ -1,9 +1,9 @@
 
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
 
 make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
 Compiling alt_alarm_start.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -EL -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
 Compiling alt_busy_sleep.c...
@@ -174,335 +174,163 @@ Compiling altera_avalon_jtag_uart_read.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -EL -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
 Compiling altera_avalon_jtag_uart_write.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -EL -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_hostfs.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -EL -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_hostfs.o drivers/src/altera_hostfs.c
 Compiling altera_up_avalon_video_pixel_buffer_dma.c...
 nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -EL -mno-hw-div -mhw-mul -mno-hw-mulx   -o obj/drivers/src/altera_up_avalon_video_pixel_buffer_dma.o drivers/src/altera_up_avalon_video_pixel_buffer_dma.c
 Creating libhal_bsp.a...
 rm -f -f libhal_bsp.a
-nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_qsys_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_up_avalon_video_pixel_buffer_dma.o
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.c:17: warning: control reaches end of non-void function
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/main.o -lm 
-nios2-elf-insert DE2_70_D5M_NIOS.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS/de2_70.sopcinfo
-Info: (DE2_70_D5M_NIOS.elf) 16 KBytes program size (code + initialized data).
-Info:                       32745 KBytes free for stack + heap.
-Info: Creating DE2_70_D5M_NIOS.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_D5M_NIOS.elf >DE2_70_D5M_NIOS.objdump
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.c:19: warning: control reaches end of non-void function
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/main.o -lm 
-nios2-elf-insert DE2_70_D5M_NIOS.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS/de2_70.sopcinfo
-Info: (DE2_70_D5M_NIOS.elf) 16 KBytes program size (code + initialized data).
-Info:                       32745 KBytes free for stack + heap.
-Info: Creating DE2_70_D5M_NIOS.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_D5M_NIOS.elf >DE2_70_D5M_NIOS.objdump
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.c:6: warning: control reaches end of non-void function
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/main.o -lm 
-nios2-elf-insert DE2_70_D5M_NIOS.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS/de2_70.sopcinfo
-Info: (DE2_70_D5M_NIOS.elf) 16 KBytes program size (code + initialized data).
-Info:                       32745 KBytes free for stack + heap.
-Info: Creating DE2_70_D5M_NIOS.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_D5M_NIOS.elf >DE2_70_D5M_NIOS.objdump
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.c:6: warning: control reaches end of non-void function
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/main.o -lm 
-nios2-elf-insert DE2_70_D5M_NIOS.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS/de2_70.sopcinfo
-Info: (DE2_70_D5M_NIOS.elf) 16 KBytes program size (code + initialized data).
-Info:                       32745 KBytes free for stack + heap.
-Info: Creating DE2_70_D5M_NIOS.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_D5M_NIOS.elf >DE2_70_D5M_NIOS.objdump
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.c:5: warning: control reaches end of non-void function
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/main.o -lm 
-nios2-elf-insert DE2_70_D5M_NIOS.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS/de2_70.sopcinfo
-Info: (DE2_70_D5M_NIOS.elf) 16 KBytes program size (code + initialized data).
-Info:                       32746 KBytes free for stack + heap.
-Info: Creating DE2_70_D5M_NIOS.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_D5M_NIOS.elf >DE2_70_D5M_NIOS.objdump
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-main.c:4: warning: implicit declaration of function 'VGA_box'
-main.c:5: warning: control reaches end of non-void function
-main.c: At top level:
-main.c:8: error: conflicting types for 'sramToSdram'
-main.c:1: error: previous declaration of 'sramToSdram' was here
-make: *** [obj/default/main.o] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.c:4: warning: implicit declaration of function 'VGA_box'
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/main.o -lm 
-main.c:5: warning: control reaches end of non-void function
-obj/default/main.o: In function `main':
-C:\Users\Francisco\Desktop\DE2_70_NIOS_GRAYSCALE\Eclipse\Software\DE2_70_D5M_NIOS/main.c:4: undefined reference to `VGA_box'
-collect2: ld returned 1 exit status
-make: *** [DE2_70_D5M_NIOS.elf] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.c to obj/default/main.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.c
-main.c: In function 'main':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.c:5: warning: control reaches end of non-void function
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/main.o -lm 
-nios2-elf-insert DE2_70_D5M_NIOS.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS/de2_70.sopcinfo
-Info: (DE2_70_D5M_NIOS.elf) 16 KBytes program size (code + initialized data).
-Info:                       32746 KBytes free for stack + heap.
-Info: Creating DE2_70_D5M_NIOS.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_D5M_NIOS.elf >DE2_70_D5M_NIOS.objdump
-[DE2_70_D5M_NIOS build complete]
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-makefile:764: warning: overriding commands for target `obj/default/main.o'
-makefile:761: warning: ignoring old commands for target `obj/default/main.o'
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_qsys_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_hostfs.o obj/drivers/src/altera_up_avalon_video_pixel_buffer_dma.o
 [BSP build complete]
 Info: Compiling image.c to obj/default/image.o
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/image.o image.c
-image.c: In function 'readPgm':
-Info: Compiling main.cpp to obj/default/main.o
-image.c:121: warning: unused variable 'version'
-nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.cpp
-image.c: In function 'cpyPgm':
-image.c:248: warning: control reaches end of non-void function
-main.cpp: In function 'int main(int, char**)':
-main.cpp:95: warning: comparison between signed and unsigned integer expressions
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/image.o image.c
+image.c:166:2: warning: "/*" within comment
 Info: Compiling stdio-wrapper.c to obj/default/stdio-wrapper.o
-main.cpp:51: warning: unused variable 'mode'
-nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/stdio-wrapper.o stdio-wrapper.c
+image.c: In function 'cpyPgm':
+nios2-elf-gcc -xc -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/stdio-wrapper.o stdio-wrapper.c
+image.c:290: warning: control reaches end of non-void function
 Info: Compiling haar.cpp to obj/default/haar.o
-nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/haar.o haar.cpp
-haar.cpp:668:3: warning: "/*" within comment
+nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/haar.o haar.cpp
+haar.cpp:669:3: warning: "/*" within comment
+Info: Compiling main.cpp to obj/default/main.o
+haar.cpp:670:3: warning: "/*" within comment
+haar.cpp:671:3: warning: "/*" within comment
+haar.cpp: In function 'std::vector<MyRect, std::allocator<MyRect> > detectObjects(MyImage*, MySize, MySize, myCascade*, float, int)':
+nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.cpp
+haar.cpp:152: warning: converting to 'int' from 'float'
+haar.cpp:152: warning: converting to 'int' from 'float'
+main.cpp: In function 'int main(int, char**)':
+Info: Compiling rectangles.cpp to obj/default/rectangles.o
+main.cpp:97: warning: comparison between signed and unsigned integer expressions
+nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/rectangles.o rectangles.cpp
+main.cpp:50: warning: unused variable 'mode'
+Info: Linking DE2_70_Viola-Jones.elf
+nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/   -Wl,-Map=DE2_70_Viola-Jones.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_Viola-Jones.elf obj/default/image.o obj/default/stdio-wrapper.o obj/default/haar.o obj/default/main.o obj/default/rectangles.o -lm 
+nios2-elf-insert DE2_70_Viola-Jones.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo
+Info: (DE2_70_Viola-Jones.elf) 133 KBytes program size (code + initialized data).
+Info:                          32628 KBytes free for stack + heap.
+Info: Creating DE2_70_Viola-Jones.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_Viola-Jones.elf >DE2_70_Viola-Jones.objdump
+[DE2_70_Viola-Jones build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
+
+make all 
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+[BSP build complete]
+[DE2_70_Viola-Jones build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
+
+make all 
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+[BSP build complete]
+[DE2_70_Viola-Jones build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
+
+make all 
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+[BSP build complete]
+Info: Compiling haar.cpp to obj/default/haar.o
+nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/haar.o haar.cpp
 haar.cpp:669:3: warning: "/*" within comment
 haar.cpp:670:3: warning: "/*" within comment
+haar.cpp:671:3: warning: "/*" within comment
 haar.cpp: In function 'std::vector<MyRect, std::allocator<MyRect> > detectObjects(MyImage*, MySize, MySize, myCascade*, float, int)':
-Info: Compiling rectangles.cpp to obj/default/rectangles.o
+Info: Compiling main.cpp to obj/default/main.o
 haar.cpp:152: warning: converting to 'int' from 'float'
 haar.cpp:152: warning: converting to 'int' from 'float'
-nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/rectangles.o rectangles.cpp
-Info: Linking DE2_70_D5M_NIOS.elf
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/image.o obj/default/main.o obj/default/stdio-wrapper.o obj/default/haar.o obj/default/main.o obj/default/rectangles.o -lm 
-obj/default/main.o: In function `main':
-C:\Users\Francisco\Desktop\DE2_70_NIOS_GRAYSCALE\Eclipse\Software\DE2_70_D5M_NIOS/main.cpp:46: multiple definition of `main'
-obj/default/main.o:C:\Users\Francisco\Desktop\DE2_70_NIOS_GRAYSCALE\Eclipse\Software\DE2_70_D5M_NIOS/main.cpp:46: first defined here
-collect2: ld returned 1 exit status
-make: *** [DE2_70_D5M_NIOS.elf] Error 1
-
-**** Build Finished ****
-
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
-
-make all 
-makefile:764: warning: overriding commands for target `obj/default/main.o'
-makefile:761: warning: ignoring old commands for target `obj/default/main.o'
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-[BSP build complete]
-Info: Compiling main.cpp to obj/default/main.o
-nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.cpp
+nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.cpp
 main.cpp: In function 'int main(int, char**)':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.cpp:94: warning: comparison between signed and unsigned integer expressions
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/image.o obj/default/main.o obj/default/stdio-wrapper.o obj/default/haar.o obj/default/main.o obj/default/rectangles.o -lm 
+Info: Linking DE2_70_Viola-Jones.elf
+nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/   -Wl,-Map=DE2_70_Viola-Jones.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_Viola-Jones.elf obj/default/image.o obj/default/stdio-wrapper.o obj/default/haar.o obj/default/main.o obj/default/rectangles.o -lm 
+main.cpp:97: warning: comparison between signed and unsigned integer expressions
 main.cpp:50: warning: unused variable 'mode'
-obj/default/main.o: In function `main':
-C:\Users\Francisco\Desktop\DE2_70_NIOS_GRAYSCALE\Eclipse\Software\DE2_70_D5M_NIOS/main.cpp:46: multiple definition of `main'
-obj/default/main.o:C:\Users\Francisco\Desktop\DE2_70_NIOS_GRAYSCALE\Eclipse\Software\DE2_70_D5M_NIOS/main.cpp:46: first defined here
-collect2: ld returned 1 exit status
-make: *** [DE2_70_D5M_NIOS.elf] Error 1
+nios2-elf-insert DE2_70_Viola-Jones.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo
+Info: (DE2_70_Viola-Jones.elf) 133 KBytes program size (code + initialized data).
+Info:                          32628 KBytes free for stack + heap.
+Info: Creating DE2_70_Viola-Jones.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_Viola-Jones.elf >DE2_70_Viola-Jones.objdump
+[DE2_70_Viola-Jones build complete]
 
 **** Build Finished ****
 
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
 
 make all 
-makefile:764: warning: overriding commands for target `obj/default/main.o'
-makefile:761: warning: ignoring old commands for target `obj/default/main.o'
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
 [BSP build complete]
-Info: Compiling main.cpp to obj/default/main.o
-nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.cpp
-main.cpp: In function 'int main()':
-Info: Linking DE2_70_D5M_NIOS.elf
-main.cpp:94: warning: comparison between signed and unsigned integer expressions
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/image.o obj/default/main.o obj/default/stdio-wrapper.o obj/default/haar.o obj/default/main.o obj/default/rectangles.o -lm 
-main.cpp:50: warning: unused variable 'mode'
-obj/default/main.o: In function `main':
-C:\Users\Francisco\Desktop\DE2_70_NIOS_GRAYSCALE\Eclipse\Software\DE2_70_D5M_NIOS/main.cpp:46: multiple definition of `main'
-obj/default/main.o:C:\Users\Francisco\Desktop\DE2_70_NIOS_GRAYSCALE\Eclipse\Software\DE2_70_D5M_NIOS/main.cpp:46: first defined here
-collect2: ld returned 1 exit status
-make: *** [DE2_70_D5M_NIOS.elf] Error 1
+[DE2_70_Viola-Jones build complete]
 
 **** Build Finished ****
 
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
 
 make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
 [BSP build complete]
-Info: Compiling main.cpp to obj/default/main.o
-nios2-elf-gcc -xc++ -MP -MMD -c -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//HAL/inc -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/ -IC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED      -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/main.o main.cpp
-main.cpp: In function 'int main(int, char**)':
-Info: Linking DE2_70_D5M_NIOS.elf
-nios2-elf-g++  -T'C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//linker.x' -msys-crt0='C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -LC:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/   -Wl,-Map=DE2_70_D5M_NIOS.map   -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o DE2_70_D5M_NIOS.elf obj/default/image.o obj/default/stdio-wrapper.o obj/default/haar.o obj/default/main.o obj/default/rectangles.o -lm 
-main.cpp:94: warning: comparison between signed and unsigned integer expressions
-nios2-elf-insert DE2_70_D5M_NIOS.elf --thread_model hal --cpu_name nios2_processor --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name de2_70 --quartus_project_dir "c:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS" --sopcinfo C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/QSYS/de2_70.sopcinfo
-main.cpp:50: warning: unused variable 'mode'
-Info: (DE2_70_D5M_NIOS.elf) 134 KBytes program size (code + initialized data).
-Info:                       32627 KBytes free for stack + heap.
-Info: Creating DE2_70_D5M_NIOS.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source DE2_70_D5M_NIOS.elf >DE2_70_D5M_NIOS.objdump
-[DE2_70_D5M_NIOS build complete]
+[DE2_70_Viola-Jones build complete]
 
 **** Build Finished ****
 
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
 
 make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
 [BSP build complete]
-[DE2_70_D5M_NIOS build complete]
+[DE2_70_Viola-Jones build complete]
 
 **** Build Finished ****
 
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
 
 make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
 [BSP build complete]
-[DE2_70_D5M_NIOS build complete]
+[DE2_70_Viola-Jones build complete]
 
 **** Build Finished ****
 
-**** Build of configuration Nios II for project DE2_70_D5M_NIOS ****
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
 
 make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_GRAYSCALE/Eclipse/Software/DE2_70_D5M_NIOS_bsp/
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
 [BSP build complete]
-[DE2_70_D5M_NIOS build complete]
+[DE2_70_Viola-Jones build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
+
+make all 
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+[BSP build complete]
+[DE2_70_Viola-Jones build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
+
+make all 
+Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
+[BSP build complete]
+[DE2_70_Viola-Jones build complete]
 
 **** Build Finished ****
