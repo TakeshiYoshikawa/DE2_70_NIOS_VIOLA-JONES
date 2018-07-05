@@ -63,8 +63,7 @@ MyIntImage;
 
 //int readPgm(char *fileName, MyImage* image);
 int readImage(int x1, int y1, int x2, int y2, MyImage* image);
-//int writePgm(char *fileName, MyImage* image);
-int writeImage(int x1, int y1, int x2, int y2, MyImage* image);
+int writePgm(char *fileName, MyImage* image);
 int cpyPgm(MyImage *src, MyImage *dst);
 void createImage(int width, int height, MyImage *image);
 void createSumImage(int width, int height, MyIntImage *image);

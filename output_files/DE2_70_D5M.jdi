@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="8e7fdd7b459900e727be"/>
+    <hash md5_digest_80b="89e9dfdf20c18d854b72"/>
   </project>
   <file_info>
     <file device="EP2C70F896C6" path="DE2_70_D5M.sof" usercode="0xFFFFFFFF"/>
@@ -144,7 +144,7 @@
   <sld_infos>
     <sld_info hpath="de2_70:NiosII" name="NiosII">
       <assignment_values>
-        <assignment_value text="QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1530017492"/>
+        <assignment_value text="QSYS_NAME de2_70 HAS_SOPCINFO 1 GENERATION_ID 1530626121"/>
       </assignment_values>
       <parameters/>
     </sld_info>

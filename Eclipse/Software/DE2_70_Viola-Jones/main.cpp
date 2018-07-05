@@ -37,13 +37,14 @@
 #include "stdio-wrapper.h"
 #include "haar.h"
 
-#define INPUT_FILENAME "Face.pgm"
-#define OUTPUT_FILENAME "Output.pgm"
+//#define INPUT_FILENAME "/mnt/host/Face.pgm"
+#define OUTPUT_FILENAME "/mnt/host/Output.pgm"
 
 using namespace std;
 
 
-int main (int argc, char *argv[]){
+int main (int argc, char *argv[]) 
+{
 
 	int flag;
 	
@@ -62,7 +63,7 @@ int main (int argc, char *argv[]){
 	MyImage imageObj;
 	MyImage *image = &imageObj;
 
-	/*flag = readPgm((char *)"Face.pgm", image);
+	/*flag = readPgm((char *)"/mnt/host/Face.pgm", image);
 	if (flag == -1)
 	{
 		printf( "Unable to open input image\n");
@@ -87,7 +88,6 @@ int main (int argc, char *argv[]){
 
 	readTextClassifier();
 
-
 	std::vector<MyRect> result;
 
 	printf("-- detecting faces --\r\n");
@@ -101,13 +101,13 @@ int main (int argc, char *argv[]){
 	}
 
 	printf("-- saving output --\r\n"); 
-	//flag = writePgm((char *)OUTPUT_FILENAME, image);
-	flag = writeImage(0, 0, 320, 240, image);
+	flag = writePgm((char *)OUTPUT_FILENAME, image); 
 
 	printf("-- image saved --\r\n");
 
 	/* delete image and free classifier */
 	releaseTextClassifier();
 	freeImage(image);
+
 	return 0;
 }

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>29/06/2018 11:07:46</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1530281266137</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>04/07/2018 11:12:46</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1530713566879</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Francisco\Desktop\DE2_70_NIOS_VIOLA-JONES\Eclipse\Software\DE2_70_Viola-Jones_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Francisco\Desktop\DE2_70_NIOS_VIOLA-JONES\QSYS\de2_70.sopcinfo</SopcDesignFile>

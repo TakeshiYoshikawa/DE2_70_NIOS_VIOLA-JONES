@@ -662,7 +662,6 @@ void readTextClassifier()//(myCascade * cascade)
   int r_index = 0;
   int w_index = 0;
   int tree_index = 0;
-
   FILE *finfo = fopen("/mnt/host/info.txt", "r");
 
   /**************************************************
@@ -680,20 +679,17 @@ void readTextClassifier()//(myCascade * cascade)
 
   /**************************************************
    * how many filters in each stage? 
-   * They are specified in info.txt
+   * They are specified in info.txt,
    * starting from second line.
    * (in the 5kk73 example, from line 2 to line 26)
    *************************************************/
-
   while ( fgets (mystring , 12 , finfo) != NULL )
     {
       stages_array[i] = atoi(mystring);
       total_nodes += stages_array[i];
       i++;
     }
-
   fclose(finfo);
-
 
 
   /* TODO: use matrices where appropriate */
@@ -702,7 +698,6 @@ void readTextClassifier()//(myCascade * cascade)
    * Note that, to increase parallelism,
    * some arrays need to be splitted or duplicated
    **********************************************/
-
   rectangles_array = (int *)malloc(sizeof(int)*total_nodes*12);
   scaled_rectangles_array = (int **)malloc(sizeof(int*)*total_nodes*12);
   weights_array = (int *)malloc(sizeof(int)*total_nodes*3);
@@ -710,7 +705,6 @@ void readTextClassifier()//(myCascade * cascade)
   alpha2_array = (int*)malloc(sizeof(int)*total_nodes);
   tree_thresh_array = (int*)malloc(sizeof(int)*total_nodes);
   stages_thresh_array = (int*)malloc(sizeof(int)*stages);
-
   FILE *fp = fopen("/mnt/host/class.txt", "r");
 
   /******************************************
@@ -787,7 +781,6 @@ void readTextClassifier()//(myCascade * cascade)
 	} /* end of j loop */
     } /* end of i loop */
   fclose(fp);
-
 }
 
 
