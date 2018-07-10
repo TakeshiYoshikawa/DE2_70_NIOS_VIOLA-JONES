@@ -190,7 +190,7 @@ void itochar(int x, char* szBuffer, int radix)
 
 int readImage(int x1, int y1, int x2, int y2, MyImage* image){
 	int offset, i=0, row, col;
-	volatile short * sram = (short *)  0x02000000;
+	volatile short * sram = (short *)  0x08000000;
 	image->data = (unsigned char*)malloc(sizeof(unsigned char)*(x2*y2));
 
 	image->height = y2;

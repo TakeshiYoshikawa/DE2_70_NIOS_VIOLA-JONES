@@ -1,10 +1,7 @@
 
-**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
+**** Clean-only build of configuration Nios II for project DE2_70_Viola-Jones ****
 
-make all 
-Info: Building C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
-make --no-print-directory -C C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/
-[BSP build complete]
-[DE2_70_Viola-Jones build complete]
+make clean 
+[DE2_70_Viola-Jones clean complete]
 
 **** Build Finished ****

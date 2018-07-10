@@ -1,7 +1,0 @@
-
-**** Clean-only build of configuration Nios II for project hostFS ****
-
-make clean 
-[hostFS clean complete]
-
-**** Build Finished ****

@@ -3,6 +3,7 @@
 <workbenchAdvisor/>
 <window height="1040" maximized="true" width="960" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
+<intro standby="true"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
@@ -13,63 +14,31 @@
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.cdt.ui.editor.asm.AsmEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1530282720477" focus="true" label="Workspace - Nios II">
+<page aggregateWorkingSetId="Aggregate for window 1531157493857" focus="true" label="Workspace - Nios II">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="image.c" partName="image.c" path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones/image.c" title="image.c" tooltip="DE2_70_Viola-Jones/image.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DE2_70_Viola-Jones/image.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3927" selectionTopPixel="1140"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="haar.cpp" partName="haar.cpp" path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones/haar.cpp" title="haar.cpp" tooltip="DE2_70_Viola-Jones/haar.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DE2_70_Viola-Jones/haar.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13212" selectionTopPixel="5310"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones/main.cpp" title="main.cpp" tooltip="DE2_70_Viola-Jones/main.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DE2_70_Viola-Jones/main.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1738" selectionTopPixel="885"/>
-</editor>
 </editors>
 <views>
-<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
-<viewState/>
-</view>
 <view id="org.eclipse.debug.ui.MemoryView" partName="Memory"/>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
-<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="300" org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.priorityField="30" org.eclipse.ui.ide.resourceField="90"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
-</viewState>
-</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
@@ -96,9 +65,15 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.internal.introview" partName="Welcome">
+<viewState>
+<presentation currentPage="root" restore="true"/>
+<standbyPart/>
+</viewState>
+</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List"/>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -166,6 +141,7 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
 <layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
@@ -175,13 +151,15 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="702" ratioRight="234" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6972f1" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="1">&#x0A;<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="234" ratioRight="702" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.74972796" ratioLeft="689" ratioRight="230" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
@@ -193,7 +171,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.7492877" ratioLeft="526" ratioRight="176" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
@@ -223,7 +201,6 @@
 <alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="org.eclipse.ui.console.ConsoleView"/>
 <show_view_action id="org.eclipse.search.ui.views.SearchView"/>
 <show_view_action id="org.eclipse.ui.views.ContentOutline"/>
@@ -245,6 +222,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -259,15 +237,18 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="topLeft">
-<folder appearance="2" expanded="2">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1ce1387" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.1671032" ratioLeft="319" ratioRight="1590" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.7497326" ratioLeft="701" ratioRight="234" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.75" ratioLeft="507" ratioRight="169" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -276,7 +257,6 @@
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
-<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -285,7 +265,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.7496513" ratioLeft="1075" ratioRight="359" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -331,67 +311,52 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.ui.views.ProgressView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.debug.ui.RegisterView"/>
 <view id="org.eclipse.debug.ui.MemoryView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6d8b69" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7497326" ratioLeft="701" ratioRight="234" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7497326" ratioLeft="701" ratioRight="234" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
-<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="LabelNotFound"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44935805" ratioLeft="315" ratioRight="386" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="Memory"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -403,157 +368,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/main.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/DE2_70_Viola-Jones_bsp/HAL/src/crt0.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones_bsp/HAL/src/alt_exit.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/DE2_70_Viola-Jones_bsp/HAL/src/crt0.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/image.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/main.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/haar.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/image.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/main.cpp"/>
-</editors>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="crt0.S" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="crt0.S" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="crt0.S" index="1">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="1372" y="0"/>
-</item>
-<item historyLabel="crt0.S" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="alt_exit.c" index="2">
-<position info="not_deleted" x="3803" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="crt0.S" index="3">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="crt0.S" index="3">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4225" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4314" y="0"/>
-</item>
-<item historyLabel="crt0.S" index="3">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="crt0.S" index="3">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4314" y="0"/>
-</item>
-<item historyLabel="crt0.S" index="3">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="1521" y="0"/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4314" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="0">
-<position info="not_deleted" x="1547" y="0"/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4392" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="5">
-<position/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4314" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="5">
-<position/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4314" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="5">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="5">
-<position/>
-</item>
-<item historyLabel="main.cpp" index="5">
-<position/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="4314" y="0"/>
-</item>
-<item historyLabel="crt0.S" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="5">
-<position info="not_deleted" x="1394" y="0"/>
-</item>
-<item historyLabel="image.c" index="4">
-<position info="not_deleted" x="2095" y="0"/>
-</item>
-<item historyLabel="haar.cpp" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="image.c" index="7">
-<position info="not_deleted" x="2095" y="0"/>
-</item>
-<item historyLabel="image.c" index="7">
-<position info="not_deleted" x="5146" y="3"/>
-</item>
-<item historyLabel="main.cpp" index="8">
-<position info="not_deleted" x="1738" y="0"/>
-</item>
-<item active="true" historyLabel="image.c" index="7">
-<position info="not_deleted" x="5576" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -571,44 +386,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="DE2_70_Viola-Jones/main.cpp">
-<persistable path="/DE2_70_Viola-Jones/main.cpp"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="haar.cpp" tooltip="DE2_70_Viola-Jones/haar.cpp">
 <persistable path="/DE2_70_Viola-Jones/haar.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="crt0.S" tooltip="DE2_70_Viola-Jones_bsp/HAL/src/crt0.S">
-<persistable path="/DE2_70_Viola-Jones_bsp/HAL/src/crt0.S"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="image.c" tooltip="DE2_70_Viola-Jones/image.c">
 <persistable path="/DE2_70_Viola-Jones/image.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_exit.c" tooltip="DE2_70_Viola-Jones_bsp/HAL/src/alt_exit.c">
-<persistable path="/DE2_70_Viola-Jones_bsp/HAL/src/alt_exit.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio-wrapper.h" tooltip="DE2_70_Viola-Jones/stdio-wrapper.h">
-<persistable path="/DE2_70_Viola-Jones/stdio-wrapper.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio-wrapper.c" tooltip="DE2_70_Viola-Jones/stdio-wrapper.c">
-<persistable path="/DE2_70_Viola-Jones/stdio-wrapper.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="rectangles.cpp" tooltip="DE2_70_Viola-Jones/rectangles.cpp">
-<persistable path="/DE2_70_Viola-Jones/rectangles.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="image.h" tooltip="DE2_70_Viola-Jones/image.h">
-<persistable path="/DE2_70_Viola-Jones/image.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="haar.h" tooltip="DE2_70_Viola-Jones/haar.h">
-<persistable path="/DE2_70_Viola-Jones/haar.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="host_filesystem.c" tooltip="hostFS/host_filesystem.c">
-<persistable path="/hostFS/host_filesystem.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_main.c" tooltip="fopenTeste_bsp/HAL/src/alt_main.c">
-<persistable path="/fopenTeste_bsp/HAL/src/alt_main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="class.txt" tooltip="DE2_70_Viola-Jones/class.txt">
-<persistable path="/DE2_70_Viola-Jones/class.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="DE2_70_Viola-Jones/main.cpp">
+<persistable path="/DE2_70_Viola-Jones/main.cpp"/>
 </file>
 </mruList>
 </workbench>

@@ -1,10 +1,10 @@
 /*
  * linker.h - Linker script mapping information
  *
- * Machine generated for CPU 'nios2_processor' in SOPC Builder design 'de2_70'
+ * Machine generated for CPU 'nios_processor' in SOPC Builder design 'de2_70'
  * SOPC Builder design path: C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo
  *
- * Generated: Thu Jun 28 09:05:35 GMT-03:00 2018
+ * Generated: Mon Jul 09 14:32:24 GMT-03:00 2018
  */
 
 /*
@@ -65,12 +65,10 @@
  *
  */
 
-#define ONCHIP_MEMORY_REGION_BASE 0x2201000
-#define ONCHIP_MEMORY_REGION_SPAN 4096
+#define NEW_SDRAM_CONTROLLER_0_REGION_BASE 0x20
+#define NEW_SDRAM_CONTROLLER_0_REGION_SPAN 8388576
 #define RESET_REGION_BASE 0x0
 #define RESET_REGION_SPAN 32
-#define SDRAM_REGION_BASE 0x20
-#define SDRAM_REGION_SPAN 33554400
 
 
 /*
@@ -78,11 +76,11 @@
  *
  */
 
-#define ALT_EXCEPTIONS_DEVICE SDRAM
-#define ALT_RESET_DEVICE SDRAM
-#define ALT_RODATA_DEVICE SDRAM
-#define ALT_RWDATA_DEVICE SDRAM
-#define ALT_TEXT_DEVICE SDRAM
+#define ALT_EXCEPTIONS_DEVICE NEW_SDRAM_CONTROLLER_0
+#define ALT_RESET_DEVICE NEW_SDRAM_CONTROLLER_0
+#define ALT_RODATA_DEVICE NEW_SDRAM_CONTROLLER_0
+#define ALT_RWDATA_DEVICE NEW_SDRAM_CONTROLLER_0
+#define ALT_TEXT_DEVICE NEW_SDRAM_CONTROLLER_0
 
 
 /*

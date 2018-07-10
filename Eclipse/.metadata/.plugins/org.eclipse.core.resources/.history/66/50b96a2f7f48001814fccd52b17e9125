@@ -1,8 +1,0 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-imt main(){
-
-	printf("Teste");
-	return 0;
-}

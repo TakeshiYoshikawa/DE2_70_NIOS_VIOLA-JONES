@@ -13,7 +13,7 @@
 <td width="20%" bgcolor="#77BBFF">Quartus JDI File:</td><td>default</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">CPU:</td><td>nios2_processor</td>
+<td width="20%" bgcolor="#77BBFF">CPU:</td><td>nios_processor</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Settings File:</td><td>settings.bsp</td>
@@ -22,10 +22,10 @@
 <td width="20%" bgcolor="#77BBFF">BSP Version:</td><td>default</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>04/07/2018 11:12:46</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>09/07/2018 14:47:34</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1530713566879</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1531158454245</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Generated Location:</td><td>C:\Users\Francisco\Desktop\DE2_70_NIOS_VIOLA-JONES\Eclipse\Software\DE2_70_Viola-Jones_bsp</td>
@@ -38,19 +38,22 @@
 <th align="left" width="20%">Slave Descriptor</th><th align="left" width="40%">Address Range</th><th align="left" width="20%">Size</th><th align="left" width="20%">Attributes</th>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>jtag_uart</td><td>0x02203010 - 0x02203017</td><td>8</td><td class="listing">printable</td>
+<td>sysid_qsys_0</td><td>0x20000408 - 0x2000040F</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>Pixel_Buffer_DMA</td><td>0x02203000 - 0x0220300F</td><td>16</td><td class="listing">&nbsp;</td>
+<td>jtag_uart_0</td><td>0x20000400 - 0x20000407</td><td>8</td><td class="listing">printable</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>onchip_memory</td><td>0x02201000 - 0x02201FFF</td><td>4096</td><td class="listing">memory</td>
+<td>video_pixel_buffer_dma_0</td><td>0x10003020 - 0x1000302F</td><td>16</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>Pixel_Buffer</td><td>0x02000000 - 0x021FFFFF</td><td>2097152</td><td class="listing">&nbsp;</td>
+<td>timer_0</td><td>0x10002000 - 0x1000201F</td><td>32</td><td class="listing">timer</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>sdram</td><td>0x00000000 - 0x01FFFFFF</td><td>33554432</td><td class="listing">memory</td>
+<td>sram_0</td><td>0x08000000 - 0x081FFFFF</td><td>2097152</td><td class="listing">&nbsp;</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>new_sdram_controller_0</td><td>0x00000000 - 0x007FFFFF</td><td>8388608</td><td class="listing">memory</td>
 </tr>
 </table>
 <br>
@@ -69,22 +72,22 @@
 <th align="left" width="50%">Section</th><th align="left" width="50%">Region</th>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.text</td><td>sdram</td>
+<td>.text</td><td>new_sdram_controller_0</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.rodata</td><td>sdram</td>
+<td>.rodata</td><td>new_sdram_controller_0</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.rwdata</td><td>sdram</td>
+<td>.rwdata</td><td>new_sdram_controller_0</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.bss</td><td>sdram</td>
+<td>.bss</td><td>new_sdram_controller_0</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.heap</td><td>sdram</td>
+<td>.heap</td><td>new_sdram_controller_0</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>.stack</td><td>sdram</td>
+<td>.stack</td><td>new_sdram_controller_0</td>
 </tr>
 </table>
 <br>
@@ -733,7 +736,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>sdram</td>
+<td width="20%">Value:</td><td>new_sdram_controller_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -787,7 +790,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>sdram</td>
+<td width="20%">Value:</td><td>new_sdram_controller_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -1921,7 +1924,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>jtag_uart</td>
+<td width="20%">Value:</td><td>jtag_uart_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -1948,7 +1951,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>jtag_uart</td>
+<td width="20%">Value:</td><td>jtag_uart_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -1975,7 +1978,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>jtag_uart</td>
+<td width="20%">Value:</td><td>jtag_uart_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -2002,7 +2005,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>none</td>
+<td width="20%">Value:</td><td>timer_0</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
