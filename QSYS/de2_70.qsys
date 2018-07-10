@@ -12,7 +12,7 @@
    element $${FILENAME}
    {
    }
-   element audio_and_video_config_0
+   element AV_Config
    {
       datum _sortIndex
       {
@@ -20,7 +20,111 @@
          type = "int";
       }
    }
-   element video_pixel_buffer_dma_0.avalon_control_slave
+   element Clock_Signals
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element Dual_Clock_FIFO
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element Pixel_Buffer
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element Pixel_Buffer_DMA
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element VGA_Controller
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element Video_Bayer_Pattern_Resampler
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element Video_Clipper
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element Video_DMA
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element Video_In_Decoder
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element Video_RGB_Resampler_0
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element Video_RGB_Resampler_1
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+   element Video_Scaler_0
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element Video_Scaler_1
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element Pixel_Buffer_DMA.avalon_control_slave
    {
       datum _lockedAddress
       {
@@ -33,7 +137,7 @@
          type = "String";
       }
    }
-   element jtag_uart_0.avalon_jtag_slave
+   element jtag_uart.avalon_jtag_slave
    {
       datum _lockedAddress
       {
@@ -46,7 +150,7 @@
          type = "String";
       }
    }
-   element sram_0.avalon_ssram_slave
+   element Pixel_Buffer.avalon_ssram_slave
    {
       datum _lockedAddress
       {
@@ -67,7 +171,7 @@
          type = "int";
       }
    }
-   element clock_bridge_0
+   element clock_bridge
    {
       datum _sortIndex
       {
@@ -75,7 +179,7 @@
          type = "int";
       }
    }
-   element sysid_qsys_0.control_slave
+   element sysid_qsys.control_slave
    {
       datum _lockedAddress
       {
@@ -88,7 +192,7 @@
          type = "String";
       }
    }
-   element nios_processor.jtag_debug_module
+   element nios2_processor.jtag_debug_module
    {
       datum _lockedAddress
       {
@@ -101,7 +205,7 @@
          type = "String";
       }
    }
-   element jtag_uart_0
+   element jtag_uart
    {
       datum _sortIndex
       {
@@ -109,15 +213,7 @@
          type = "int";
       }
    }
-   element new_sdram_controller_0
-   {
-      datum _sortIndex
-      {
-         value = "17";
-         type = "int";
-      }
-   }
-   element nios_processor
+   element nios2_processor
    {
       datum _sortIndex
       {
@@ -125,20 +221,7 @@
          type = "int";
       }
    }
-   element new_sdram_controller_0.s1
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "0";
-         type = "String";
-      }
-   }
-   element timer_0.s1
+   element timer.s1
    {
       datum _lockedAddress
       {
@@ -151,15 +234,28 @@
          type = "String";
       }
    }
-   element sram_0
+   element sdram.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element sdram
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "17";
          type = "int";
       }
    }
-   element sysid_qsys_0
+   element sysid_qsys
    {
       datum _sortIndex
       {
@@ -167,107 +263,11 @@
          type = "int";
       }
    }
-   element timer_0
+   element timer
    {
       datum _sortIndex
       {
          value = "18";
-         type = "int";
-      }
-   }
-   element up_clocks
-   {
-      datum _sortIndex
-      {
-         value = "3";
-         type = "int";
-      }
-   }
-   element video_bayer_resampler_0
-   {
-      datum _sortIndex
-      {
-         value = "6";
-         type = "int";
-      }
-   }
-   element video_clipper_0
-   {
-      datum _sortIndex
-      {
-         value = "7";
-         type = "int";
-      }
-   }
-   element video_decoder_0
-   {
-      datum _sortIndex
-      {
-         value = "5";
-         type = "int";
-      }
-   }
-   element video_dma_controller_0
-   {
-      datum _sortIndex
-      {
-         value = "10";
-         type = "int";
-      }
-   }
-   element video_dual_clock_buffer_0
-   {
-      datum _sortIndex
-      {
-         value = "15";
-         type = "int";
-      }
-   }
-   element video_pixel_buffer_dma_0
-   {
-      datum _sortIndex
-      {
-         value = "12";
-         type = "int";
-      }
-   }
-   element video_rgb_resampler_0
-   {
-      datum _sortIndex
-      {
-         value = "13";
-         type = "int";
-      }
-   }
-   element video_rgb_resampler_1
-   {
-      datum _sortIndex
-      {
-         value = "9";
-         type = "int";
-      }
-   }
-   element video_scaler_0
-   {
-      datum _sortIndex
-      {
-         value = "14";
-         type = "int";
-      }
-   }
-   element video_scaler_1
-   {
-      datum _sortIndex
-      {
-         value = "8";
-         type = "int";
-      }
-   }
-   element video_vga_controller_0
-   {
-      datum _sortIndex
-      {
-         value = "16";
          type = "int";
       }
    }
@@ -286,44 +286,40 @@
  <parameter name="projectName" value="" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1531157698882" />
+ <parameter name="timeStamp" value="1531222624972" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface
    name="sram"
-   internal="sram_0.external_interface"
+   internal="Pixel_Buffer.external_interface"
    type="conduit"
    dir="end" />
  <interface
    name="sdram_clk"
-   internal="up_clocks.sdram_clk"
+   internal="Clock_Signals.sdram_clk"
    type="clock"
    dir="start" />
  <interface
    name="vga_out"
-   internal="video_vga_controller_0.external_interface"
+   internal="VGA_Controller.external_interface"
    type="conduit"
    dir="end" />
- <interface
-   name="sdram_wire"
-   internal="new_sdram_controller_0.wire"
-   type="conduit"
-   dir="end" />
+ <interface name="sdram_wire" internal="sdram.wire" type="conduit" dir="end" />
  <interface
    name="av_config"
-   internal="audio_and_video_config_0.external_interface"
+   internal="AV_Config.external_interface"
    type="conduit"
    dir="end" />
  <interface
    name="videoin"
-   internal="video_decoder_0.external_interface"
+   internal="Video_In_Decoder.external_interface"
    type="conduit"
    dir="end" />
  <interface
    name="camera_clk"
-   internal="clock_bridge_0.out_clk"
+   internal="clock_bridge.out_clk"
    type="clock"
    dir="start" />
  <module kind="clock_source" version="13.0" enabled="1" name="clk_0">
@@ -332,7 +328,11 @@
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module kind="altera_up_clocks" version="13.0" enabled="1" name="up_clocks">
+ <module
+   kind="altera_up_clocks"
+   version="13.0"
+   enabled="1"
+   name="Clock_Signals">
   <parameter name="board" value="DE2-70" />
   <parameter name="sys_clk_freq" value="50" />
   <parameter name="sdram_clk" value="true" />
@@ -346,7 +346,7 @@
    kind="altera_nios2_qsys"
    version="13.0"
    enabled="1"
-   name="nios_processor">
+   name="nios2_processor">
   <parameter name="setting_showUnpublishedSettings" value="false" />
   <parameter name="setting_showInternalSettings" value="false" />
   <parameter name="setting_preciseSlaveAccessErrorException" value="false" />
@@ -400,10 +400,10 @@
   <parameter name="cpuID_stored" value="0" />
   <parameter name="breakOffset" value="32" />
   <parameter name="userDefinedSettings" value="" />
-  <parameter name="resetSlave">new_sdram_controller_0.s1</parameter>
+  <parameter name="resetSlave" value="sdram.s1" />
   <parameter name="mmu_TLBMissExcSlave" value="None" />
-  <parameter name="exceptionSlave">new_sdram_controller_0.s1</parameter>
-  <parameter name="breakSlave">nios_processor.jtag_debug_module</parameter>
+  <parameter name="exceptionSlave" value="sdram.s1" />
+  <parameter name="breakSlave">nios2_processor.jtag_debug_module</parameter>
   <parameter name="setting_perfCounterWidth" value="32" />
   <parameter name="setting_interruptControllerType" value="Internal" />
   <parameter name="setting_branchPredictionType" value="Automatic" />
@@ -447,8 +447,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='new_sdram_controller_0.s1' start='0x0' end='0x800000' /><slave name='nios_processor.jtag_debug_module' start='0xA000000' end='0xA000800' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='new_sdram_controller_0.s1' start='0x0' end='0x800000' /><slave name='sram_0.avalon_ssram_slave' start='0x8000000' end='0x8200000' /><slave name='nios_processor.jtag_debug_module' start='0xA000000' end='0xA000800' /><slave name='timer_0.s1' start='0x10002000' end='0x10002020' /><slave name='video_pixel_buffer_dma_0.avalon_control_slave' start='0x10003020' end='0x10003030' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x20000400' end='0x20000408' /><slave name='sysid_qsys_0.control_slave' start='0x20000408' end='0x20000410' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x0' end='0x800000' /><slave name='nios2_processor.jtag_debug_module' start='0xA000000' end='0xA000800' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x0' end='0x800000' /><slave name='Pixel_Buffer.avalon_ssram_slave' start='0x8000000' end='0x8200000' /><slave name='nios2_processor.jtag_debug_module' start='0xA000000' end='0xA000800' /><slave name='timer.s1' start='0x10002000' end='0x10002020' /><slave name='Pixel_Buffer_DMA.avalon_control_slave' start='0x10003020' end='0x10003030' /><slave name='jtag_uart.avalon_jtag_slave' start='0x20000400' end='0x20000408' /><slave name='sysid_qsys.control_slave' start='0x20000408' end='0x20000410' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone II" />
   <parameter name="internalIrqMaskSystemInfo" value="65537" />
@@ -467,7 +467,7 @@
    kind="altera_up_avalon_video_dual_clock_buffer"
    version="13.0"
    enabled="1"
-   name="video_dual_clock_buffer_0">
+   name="Dual_Clock_FIFO">
   <parameter name="color_bits" value="10" />
   <parameter name="color_planes" value="3" />
   <parameter name="AUTO_CLOCK_STREAM_IN_CLOCK_RATE" value="50000000" />
@@ -478,7 +478,7 @@
    kind="altera_up_avalon_video_pixel_buffer_dma"
    version="13.0"
    enabled="1"
-   name="video_pixel_buffer_dma_0">
+   name="Pixel_Buffer_DMA">
   <parameter name="addr_mode" value="X-Y" />
   <parameter name="start_address" value="134217728" />
   <parameter name="back_start_address" value="134217728" />
@@ -492,7 +492,7 @@
    kind="altera_up_avalon_video_rgb_resampler"
    version="13.0"
    enabled="1"
-   name="video_rgb_resampler_0">
+   name="Video_RGB_Resampler_1">
   <parameter name="input_type" value="8-bit Grayscale" />
   <parameter name="output_type" value="30-bit RGB" />
   <parameter name="alpha" value="1023" />
@@ -503,7 +503,7 @@
    kind="altera_up_avalon_video_vga_controller"
    version="13.0"
    enabled="1"
-   name="video_vga_controller_0">
+   name="VGA_Controller">
   <parameter name="board" value="DE2-70" />
   <parameter name="device" value="VGA Connector" />
   <parameter name="underflow_flag" value="false" />
@@ -514,17 +514,21 @@
    kind="altera_up_avalon_video_scaler"
    version="13.0"
    enabled="1"
-   name="video_scaler_0">
+   name="Video_Scaler_1">
   <parameter name="width_scaling" value="2" />
   <parameter name="height_scaling" value="2" />
   <parameter name="width_in" value="320" />
   <parameter name="height_in" value="240" />
-  <parameter name="color_bits" value="10" />
-  <parameter name="color_planes" value="3" />
+  <parameter name="color_bits" value="8" />
+  <parameter name="color_planes" value="1" />
   <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
  </module>
- <module kind="altera_up_avalon_sram" version="13.0" enabled="1" name="sram_0">
+ <module
+   kind="altera_up_avalon_sram"
+   version="13.0"
+   enabled="1"
+   name="Pixel_Buffer">
   <parameter name="board" value="DE2-70" />
   <parameter name="pixel_buffer" value="true" />
   <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
@@ -534,7 +538,7 @@
    kind="altera_avalon_new_sdram_controller"
    version="13.0.1.99.2"
    enabled="1"
-   name="new_sdram_controller_0">
+   name="sdram">
   <parameter name="TAC" value="5.5" />
   <parameter name="TRCD" value="20.0" />
   <parameter name="TRFC" value="70.0" />
@@ -557,13 +561,13 @@
   <parameter name="initNOPDelay" value="0.0" />
   <parameter name="registerDataIn" value="true" />
   <parameter name="clockRate" value="50000000" />
-  <parameter name="componentName">$${FILENAME}_new_sdram_controller_0</parameter>
+  <parameter name="componentName" value="$${FILENAME}_sdram" />
  </module>
  <module
    kind="altera_avalon_timer"
    version="13.0.1.99.2"
    enabled="1"
-   name="timer_0">
+   name="timer">
   <parameter name="alwaysRun" value="false" />
   <parameter name="counterSize" value="32" />
   <parameter name="fixedPeriod" value="false" />
@@ -578,7 +582,7 @@
    kind="altera_avalon_jtag_uart"
    version="13.0.1.99.2"
    enabled="1"
-   name="jtag_uart_0">
+   name="jtag_uart">
   <parameter name="allowMultipleConnections" value="false" />
   <parameter name="hubInstanceID" value="0" />
   <parameter name="readBufferDepth" value="64" />
@@ -596,7 +600,7 @@
    kind="altera_avalon_sysid_qsys"
    version="13.0"
    enabled="1"
-   name="sysid_qsys_0">
+   name="sysid_qsys">
   <parameter name="id" value="0" />
   <parameter name="timestamp" value="0" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
@@ -606,7 +610,7 @@
    kind="altera_clock_bridge"
    version="13.0"
    enabled="1"
-   name="clock_bridge_0">
+   name="clock_bridge">
   <parameter name="DERIVED_CLOCK_RATE" value="50000000" />
   <parameter name="EXPLICIT_CLOCK_RATE" value="50000000" />
   <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
@@ -615,7 +619,7 @@
    kind="altera_up_avalon_audio_and_video_config"
    version="13.0"
    enabled="1"
-   name="audio_and_video_config_0">
+   name="AV_Config">
   <parameter name="device">5 Megapixel Camera (TRDB_D5M)</parameter>
   <parameter name="board" value="DE2-70" />
   <parameter name="eai" value="true" />
@@ -637,7 +641,7 @@
    kind="altera_up_avalon_video_decoder"
    version="13.0"
    enabled="1"
-   name="video_decoder_0">
+   name="Video_In_Decoder">
   <parameter name="video_source">5MP Daughtercard (THDB_D5M)</parameter>
   <parameter name="AUTO_CLOCK_RESET_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone II" />
@@ -646,7 +650,7 @@
    kind="altera_up_avalon_video_bayer_resampler"
    version="13.0"
    enabled="1"
-   name="video_bayer_resampler_0">
+   name="Video_Bayer_Pattern_Resampler">
   <parameter name="device">5MP daughtercard (THDB_D5M)</parameter>
   <parameter name="use_custom_format" value="true" />
   <parameter name="custom_width_in" value="2592" />
@@ -658,7 +662,7 @@
    kind="altera_up_avalon_video_clipper"
    version="13.0"
    enabled="1"
-   name="video_clipper_0">
+   name="Video_Clipper">
   <parameter name="width_in" value="1296" />
   <parameter name="height_in" value="972" />
   <parameter name="drop_left" value="8" />
@@ -682,7 +686,7 @@
    kind="altera_up_avalon_video_scaler"
    version="13.0"
    enabled="1"
-   name="video_scaler_1">
+   name="Video_Scaler_0">
   <parameter name="width_scaling" value="0.25" />
   <parameter name="height_scaling" value="0.25" />
   <parameter name="width_in" value="1280" />
@@ -696,7 +700,7 @@
    kind="altera_up_avalon_video_rgb_resampler"
    version="13.0"
    enabled="1"
-   name="video_rgb_resampler_1">
+   name="Video_RGB_Resampler_0">
   <parameter name="input_type" value="24-bit RGB" />
   <parameter name="output_type" value="8-bit Grayscale" />
   <parameter name="alpha" value="1023" />
@@ -707,7 +711,7 @@
    kind="altera_up_avalon_video_dma_controller"
    version="13.0"
    enabled="1"
-   name="video_dma_controller_0">
+   name="Video_DMA">
   <parameter name="mode">From Stream to Memory</parameter>
   <parameter name="addr_mode" value="X-Y" />
   <parameter name="start_address" value="134217728" />
@@ -724,17 +728,17 @@
    kind="clock"
    version="13.0"
    start="clk_0.clk"
-   end="up_clocks.clk_in_primary" />
+   end="Clock_Signals.clk_in_primary" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="up_clocks.clk_in_primary_reset" />
+   end="Clock_Signals.clk_in_primary_reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.instruction_master"
-   end="nios_processor.jtag_debug_module">
+   start="nios2_processor.instruction_master"
+   end="nios2_processor.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0a000000" />
   <parameter name="defaultConnection" value="false" />
@@ -742,8 +746,8 @@
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.data_master"
-   end="nios_processor.jtag_debug_module">
+   start="nios2_processor.data_master"
+   end="nios2_processor.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0a000000" />
   <parameter name="defaultConnection" value="false" />
@@ -751,73 +755,73 @@
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="nios_processor.clk" />
+   start="Clock_Signals.sys_clk"
+   end="nios2_processor.clk" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="nios_processor.reset_n" />
+   end="nios2_processor.reset_n" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="nios_processor.reset_n" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="nios2_processor.reset_n" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="up_clocks.clk_in_primary_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Clock_Signals.clk_in_primary_reset" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_dual_clock_buffer_0.clock_stream_in" />
+   start="Clock_Signals.sys_clk"
+   end="Dual_Clock_FIFO.clock_stream_in" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_dual_clock_buffer_0.clock_stream_in_reset" />
+   end="Dual_Clock_FIFO.clock_stream_in_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_dual_clock_buffer_0.clock_stream_in_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Dual_Clock_FIFO.clock_stream_in_reset" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.vga_clk"
-   end="video_dual_clock_buffer_0.clock_stream_out" />
+   start="Clock_Signals.vga_clk"
+   end="Dual_Clock_FIFO.clock_stream_out" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_dual_clock_buffer_0.clock_stream_out_reset" />
+   end="Dual_Clock_FIFO.clock_stream_out_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_dual_clock_buffer_0.clock_stream_out_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Dual_Clock_FIFO.clock_stream_out_reset" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_pixel_buffer_dma_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Pixel_Buffer_DMA.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_pixel_buffer_dma_0.clock_reset_reset" />
+   end="Pixel_Buffer_DMA.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_pixel_buffer_dma_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Pixel_Buffer_DMA.clock_reset_reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.data_master"
-   end="video_pixel_buffer_dma_0.avalon_control_slave">
+   start="nios2_processor.data_master"
+   end="Pixel_Buffer_DMA.avalon_control_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x10003020" />
   <parameter name="defaultConnection" value="false" />
@@ -825,83 +829,73 @@
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_rgb_resampler_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_RGB_Resampler_1.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_rgb_resampler_0.clock_reset_reset" />
+   end="Video_RGB_Resampler_1.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_rgb_resampler_0.clock_reset_reset" />
- <connection
-   kind="avalon_streaming"
-   version="13.0"
-   start="video_pixel_buffer_dma_0.avalon_pixel_source"
-   end="video_rgb_resampler_0.avalon_rgb_sink" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_RGB_Resampler_1.clock_reset_reset" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.vga_clk"
-   end="video_vga_controller_0.clock_reset" />
+   start="Clock_Signals.vga_clk"
+   end="VGA_Controller.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_vga_controller_0.clock_reset_reset" />
+   end="VGA_Controller.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_vga_controller_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="VGA_Controller.clock_reset_reset" />
  <connection
    kind="avalon_streaming"
    version="13.0"
-   start="video_dual_clock_buffer_0.avalon_dc_buffer_source"
-   end="video_vga_controller_0.avalon_vga_sink" />
+   start="Dual_Clock_FIFO.avalon_dc_buffer_source"
+   end="VGA_Controller.avalon_vga_sink" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_scaler_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_Scaler_1.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_scaler_0.clock_reset_reset" />
+   end="Video_Scaler_1.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_scaler_0.clock_reset_reset" />
- <connection
-   kind="avalon_streaming"
-   version="13.0"
-   start="video_rgb_resampler_0.avalon_rgb_source"
-   end="video_scaler_0.avalon_scaler_sink" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_Scaler_1.clock_reset_reset" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="sram_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Pixel_Buffer.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="sram_0.clock_reset_reset" />
+   end="Pixel_Buffer.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="sram_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Pixel_Buffer.clock_reset_reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="video_pixel_buffer_dma_0.avalon_pixel_dma_master"
-   end="sram_0.avalon_ssram_slave">
+   start="Pixel_Buffer_DMA.avalon_pixel_dma_master"
+   end="Pixel_Buffer.avalon_ssram_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08000000" />
   <parameter name="defaultConnection" value="false" />
@@ -909,8 +903,8 @@
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.data_master"
-   end="sram_0.avalon_ssram_slave">
+   start="nios2_processor.data_master"
+   end="Pixel_Buffer.avalon_ssram_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08000000" />
   <parameter name="defaultConnection" value="false" />
@@ -918,23 +912,19 @@
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="new_sdram_controller_0.clk" />
+   start="Clock_Signals.sys_clk"
+   end="sdram.clk" />
+ <connection kind="reset" version="13.0" start="clk_0.clk_reset" end="sdram.reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="clk_0.clk_reset"
-   end="new_sdram_controller_0.reset" />
- <connection
-   kind="reset"
-   version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="new_sdram_controller_0.reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="sdram.reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.data_master"
-   end="new_sdram_controller_0.s1">
+   start="nios2_processor.data_master"
+   end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
@@ -942,8 +932,8 @@
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.instruction_master"
-   end="new_sdram_controller_0.s1">
+   start="nios2_processor.instruction_master"
+   end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
@@ -951,23 +941,19 @@
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="timer_0.clk" />
+   start="Clock_Signals.sys_clk"
+   end="timer.clk" />
+ <connection kind="reset" version="13.0" start="clk_0.clk_reset" end="timer.reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="clk_0.clk_reset"
-   end="timer_0.reset" />
- <connection
-   kind="reset"
-   version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="timer_0.reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="timer.reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.data_master"
-   end="timer_0.s1">
+   start="nios2_processor.data_master"
+   end="timer.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x10002000" />
   <parameter name="defaultConnection" value="false" />
@@ -975,23 +961,23 @@
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="jtag_uart_0.clk" />
+   start="Clock_Signals.sys_clk"
+   end="jtag_uart.clk" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="jtag_uart_0.reset" />
+   end="jtag_uart.reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="jtag_uart_0.reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="jtag_uart.reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.data_master"
-   end="jtag_uart_0.avalon_jtag_slave">
+   start="nios2_processor.data_master"
+   end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x20000400" />
   <parameter name="defaultConnection" value="false" />
@@ -999,23 +985,23 @@
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="sysid_qsys_0.clk" />
+   start="Clock_Signals.sys_clk"
+   end="sysid_qsys.clk" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="sysid_qsys_0.reset" />
+   end="sysid_qsys.reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="sysid_qsys_0.reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="sysid_qsys.reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="nios_processor.data_master"
-   end="sysid_qsys_0.control_slave">
+   start="nios2_processor.data_master"
+   end="sysid_qsys.control_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x20000408" />
   <parameter name="defaultConnection" value="false" />
@@ -1023,166 +1009,194 @@
  <connection
    kind="interrupt"
    version="13.0"
-   start="nios_processor.d_irq"
-   end="timer_0.irq">
+   start="nios2_processor.d_irq"
+   end="timer.irq">
   <parameter name="irqNumber" value="0" />
  </connection>
  <connection
    kind="interrupt"
    version="13.0"
-   start="nios_processor.d_irq"
-   end="jtag_uart_0.irq">
+   start="nios2_processor.d_irq"
+   end="jtag_uart.irq">
   <parameter name="irqNumber" value="16" />
  </connection>
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="audio_and_video_config_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="AV_Config.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="audio_and_video_config_0.clock_reset_reset" />
+   end="AV_Config.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="audio_and_video_config_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="AV_Config.clock_reset_reset" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_decoder_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_In_Decoder.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_decoder_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_In_Decoder.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_decoder_0.clock_reset_reset" />
+   end="Video_In_Decoder.clock_reset_reset" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_bayer_resampler_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_Bayer_Pattern_Resampler.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_bayer_resampler_0.clock_reset_reset" />
+   end="Video_Bayer_Pattern_Resampler.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_bayer_resampler_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_Bayer_Pattern_Resampler.clock_reset_reset" />
  <connection
    kind="avalon_streaming"
    version="13.0"
-   start="video_decoder_0.avalon_decoder_source"
-   end="video_bayer_resampler_0.avalon_bayer_sink" />
+   start="Video_In_Decoder.avalon_decoder_source"
+   end="Video_Bayer_Pattern_Resampler.avalon_bayer_sink" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_clipper_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_Clipper.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_clipper_0.clock_reset_reset" />
+   end="Video_Clipper.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_clipper_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_Clipper.clock_reset_reset" />
  <connection
    kind="avalon_streaming"
    version="13.0"
-   start="video_bayer_resampler_0.avalon_bayer_source"
-   end="video_clipper_0.avalon_clipper_sink" />
+   start="Video_Bayer_Pattern_Resampler.avalon_bayer_source"
+   end="Video_Clipper.avalon_clipper_sink" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_scaler_1.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_Scaler_0.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_scaler_1.clock_reset_reset" />
+   end="Video_Scaler_0.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_scaler_1.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_Scaler_0.clock_reset_reset" />
  <connection
    kind="avalon_streaming"
    version="13.0"
-   start="video_clipper_0.avalon_clipper_source"
-   end="video_scaler_1.avalon_scaler_sink" />
+   start="Video_Clipper.avalon_clipper_source"
+   end="Video_Scaler_0.avalon_scaler_sink" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_rgb_resampler_1.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_RGB_Resampler_0.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_rgb_resampler_1.clock_reset_reset" />
+   end="Video_RGB_Resampler_0.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_rgb_resampler_1.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_RGB_Resampler_0.clock_reset_reset" />
  <connection
    kind="avalon_streaming"
    version="13.0"
-   start="video_scaler_1.avalon_scaler_source"
-   end="video_rgb_resampler_1.avalon_rgb_sink" />
+   start="Video_Scaler_0.avalon_scaler_source"
+   end="Video_RGB_Resampler_0.avalon_rgb_sink" />
  <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="video_dma_controller_0.clock_reset" />
+   start="Clock_Signals.sys_clk"
+   end="Video_DMA.clock_reset" />
  <connection
    kind="reset"
    version="13.0"
-   start="nios_processor.jtag_debug_module_reset"
-   end="video_dma_controller_0.clock_reset_reset" />
+   start="nios2_processor.jtag_debug_module_reset"
+   end="Video_DMA.clock_reset_reset" />
  <connection
    kind="reset"
    version="13.0"
    start="clk_0.clk_reset"
-   end="video_dma_controller_0.clock_reset_reset" />
+   end="Video_DMA.clock_reset_reset" />
  <connection
    kind="avalon_streaming"
    version="13.0"
-   start="video_rgb_resampler_1.avalon_rgb_source"
-   end="video_dma_controller_0.avalon_dma_sink" />
+   start="Video_RGB_Resampler_0.avalon_rgb_source"
+   end="Video_DMA.avalon_dma_sink" />
  <connection
    kind="avalon"
    version="13.0"
-   start="video_dma_controller_0.avalon_dma_master"
-   end="sram_0.avalon_ssram_slave">
+   start="Video_DMA.avalon_dma_master"
+   end="Pixel_Buffer.avalon_ssram_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x08000000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
-   kind="avalon_streaming"
-   version="13.0"
-   start="video_scaler_0.avalon_scaler_source"
-   end="video_dual_clock_buffer_0.avalon_dc_buffer_sink" />
- <connection
    kind="clock"
    version="13.0"
-   start="up_clocks.sys_clk"
-   end="clock_bridge_0.in_clk" />
+   start="Clock_Signals.sys_clk"
+   end="clock_bridge.in_clk" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="Pixel_Buffer_DMA.avalon_pixel_dma_master"
+   end="sdram.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="Pixel_Buffer_DMA.avalon_pixel_source"
+   end="Video_Scaler_1.avalon_scaler_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="Video_Scaler_1.avalon_scaler_source"
+   end="Video_RGB_Resampler_1.avalon_rgb_sink" />
+ <connection
+   kind="avalon_streaming"
+   version="13.0"
+   start="Video_RGB_Resampler_1.avalon_rgb_source"
+   end="Dual_Clock_FIFO.avalon_dc_buffer_sink" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="Video_DMA.avalon_dma_master"
+   end="sdram.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>
