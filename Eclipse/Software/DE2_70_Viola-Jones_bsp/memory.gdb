@@ -1,9 +1,9 @@
 # memory.gdb - GDB memory region definitions
 #
-# Machine generated for CPU 'nios_processor' in SOPC Builder design 'de2_70'
+# Machine generated for CPU 'nios2_processor' in SOPC Builder design 'de2_70'
 # SOPC Builder design path: C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo
 #
-# Generated: Mon Jul 09 14:32:24 GMT-03:00 2018
+# Generated: Tue Jul 10 11:49:24 GMT-03:00 2018
 
 # DO NOT MODIFY THIS FILE
 #
@@ -46,5 +46,5 @@
 # The cache attribute is specified which improves GDB performance
 # by allowing GDB to cache memory contents on the host.
 
-# new_sdram_controller_0
+# sdram
 memory 0x0 0x800000 cache

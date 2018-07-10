@@ -200,27 +200,12 @@ int readImage(int x1, int y1, int x2, int y2, MyImage* image){
 
 	for(row = y1; row < y2; row++){
 		for(col = x1; col < x2; col++){
-			offset = (row << 9) + col;
+			offset = (row << 8) + col;
 			image->data[i] = (unsigned char) *(sram + offset);
 			i++;
 		}
 	}
-/*
-	for (row = y1; row <= y2; row++)
-		{
-			col = x1;
-			while (col <=x2)
-			{
-				offset = (row << 9) + col;
 
-
-				image->data[col] = *(sram + offset);	// compute halfword address, set pixel
-
-
-				++col;
-			}
-		}
-*/
 	return 0;
 }
 

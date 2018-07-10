@@ -161,22 +161,22 @@ RESET_ADDRESS ?= 0x00000000
 # Pre-Initialized Memory Descriptions
 #-------------------------------------
 
-# Memory: new_sdram_controller_0
-MEM_0 := new_sdram_controller_0
-$(MEM_0)_NAME := new_sdram_controller_0
+# Memory: sdram
+MEM_0 := sdram
+$(MEM_0)_NAME := sdram
 DAT_FILES += $(HDL_SIM_DIR)/$(MEM_0).dat
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).dat
 SYM_FILES += $(HDL_SIM_DIR)/$(MEM_0).sym
 HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).sym
 $(MEM_0)_START := 0x00000000
 $(MEM_0)_END := 0x007fffff
-$(MEM_0)_HIERARCHICAL_PATH := new_sdram_controller_0
+$(MEM_0)_HIERARCHICAL_PATH := sdram
 $(MEM_0)_WIDTH := 16
 $(MEM_0)_ENDIANNESS := --little-endian-mem
 $(MEM_0)_CREATE_LANES := 0
 
-.PHONY: new_sdram_controller_0
-new_sdram_controller_0: check_elf_exists $(HDL_SIM_DIR)/$(MEM_0).dat $(HDL_SIM_DIR)/$(MEM_0).sym
+.PHONY: sdram
+sdram: check_elf_exists $(HDL_SIM_DIR)/$(MEM_0).dat $(HDL_SIM_DIR)/$(MEM_0).sym
 
 
 #END OF BSP SPECIFIC

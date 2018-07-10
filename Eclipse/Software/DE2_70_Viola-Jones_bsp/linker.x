@@ -1,10 +1,10 @@
 /*
  * linker.x - Linker script
  *
- * Machine generated for CPU 'nios_processor' in SOPC Builder design 'de2_70'
+ * Machine generated for CPU 'nios2_processor' in SOPC Builder design 'de2_70'
  * SOPC Builder design path: C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo
  *
- * Generated: Mon Jul 09 14:32:24 GMT-03:00 2018
+ * Generated: Tue Jul 10 11:49:24 GMT-03:00 2018
  */
 
 /*
@@ -51,11 +51,11 @@
 MEMORY
 {
     reset : ORIGIN = 0x0, LENGTH = 32
-    new_sdram_controller_0 : ORIGIN = 0x20, LENGTH = 8388576
+    sdram : ORIGIN = 0x20, LENGTH = 8388576
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_new_sdram_controller_0 = 0x0;
+__alt_mem_sdram = 0x0;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -110,7 +110,7 @@ SECTIONS
         KEEP (*(.exceptions.exit));
         KEEP (*(.exceptions));
         PROVIDE (__ram_exceptions_end = ABSOLUTE(.));
-    } > new_sdram_controller_0
+    } > sdram
 
     PROVIDE (__flash_exceptions_start = LOADADDR(.exceptions));
 
@@ -206,7 +206,7 @@ SECTIONS
         PROVIDE (__DTOR_END__ = ABSOLUTE(.));
         KEEP (*(.jcr))
         . = ALIGN(4);
-    } > new_sdram_controller_0 = 0x3a880100 /* Nios II NOP instruction */
+    } > sdram = 0x3a880100 /* Nios II NOP instruction */
 
     .rodata :
     {
@@ -216,7 +216,7 @@ SECTIONS
         *(.rodata1)
         . = ALIGN(4);
         PROVIDE (__ram_rodata_end = ABSOLUTE(.));
-    } > new_sdram_controller_0
+    } > sdram
 
     PROVIDE (__flash_rodata_start = LOADADDR(.rodata));
 
@@ -250,7 +250,7 @@ SECTIONS
         _edata = ABSOLUTE(.);
         PROVIDE (edata = ABSOLUTE(.));
         PROVIDE (__ram_rwdata_end = ABSOLUTE(.));
-    } > new_sdram_controller_0
+    } > sdram
 
     PROVIDE (__flash_rwdata_start = LOADADDR(.rwdata));
 
@@ -281,7 +281,7 @@ SECTIONS
 
         . = ALIGN(4);
         __bss_end = ABSOLUTE(.);
-    } > new_sdram_controller_0
+    } > sdram
 
     /*
      *
@@ -306,18 +306,18 @@ SECTIONS
      *
      */
 
-    .new_sdram_controller_0 LOADADDR (.bss) + SIZEOF (.bss) : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .sdram LOADADDR (.bss) + SIZEOF (.bss) : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
     {
-        PROVIDE (_alt_partition_new_sdram_controller_0_start = ABSOLUTE(.));
-        *(.new_sdram_controller_0. new_sdram_controller_0.*)
+        PROVIDE (_alt_partition_sdram_start = ABSOLUTE(.));
+        *(.sdram. sdram.*)
         . = ALIGN(4);
-        PROVIDE (_alt_partition_new_sdram_controller_0_end = ABSOLUTE(.));
+        PROVIDE (_alt_partition_sdram_end = ABSOLUTE(.));
         _end = ABSOLUTE(.);
         end = ABSOLUTE(.);
         __alt_stack_base = ABSOLUTE(.);
-    } > new_sdram_controller_0
+    } > sdram
 
-    PROVIDE (_alt_partition_new_sdram_controller_0_load_addr = LOADADDR(.new_sdram_controller_0));
+    PROVIDE (_alt_partition_sdram_load_addr = LOADADDR(.sdram));
 
     /*
      * Stabs debugging sections.

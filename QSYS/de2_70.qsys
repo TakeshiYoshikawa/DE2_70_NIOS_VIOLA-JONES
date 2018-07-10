@@ -286,7 +286,7 @@
  <parameter name="projectName" value="" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1531222624972" />
+ <parameter name="timeStamp" value="1531232552591" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
@@ -611,8 +611,8 @@
    version="13.0"
    enabled="1"
    name="clock_bridge">
-  <parameter name="DERIVED_CLOCK_RATE" value="50000000" />
-  <parameter name="EXPLICIT_CLOCK_RATE" value="50000000" />
+  <parameter name="DERIVED_CLOCK_RATE" value="25000000" />
+  <parameter name="EXPLICIT_CLOCK_RATE" value="25000000" />
   <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
  </module>
  <module
@@ -1160,11 +1160,6 @@
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
-   kind="clock"
-   version="13.0"
-   start="Clock_Signals.sys_clk"
-   end="clock_bridge.in_clk" />
- <connection
    kind="avalon"
    version="13.0"
    start="Pixel_Buffer_DMA.avalon_pixel_dma_master"
@@ -1197,6 +1192,11 @@
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
+ <connection
+   kind="clock"
+   version="13.0"
+   start="Clock_Signals.vga_clk"
+   end="clock_bridge.in_clk" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>

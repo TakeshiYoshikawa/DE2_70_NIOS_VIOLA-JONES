@@ -2,7 +2,7 @@
 <?scdStore version="2"?>
 
 <scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1837405865;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1837405865.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1193994090;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1039481484">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.10921611;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.10921611.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.1193621708;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1123085238">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/HAL/inc"/>
 <includePath path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/"/>
@@ -230,7 +230,7 @@
 <definedSymbol symbol="ALT_SINGLE_THREADED=1"/>
 </collector>
 </instance>
-<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1837405865;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1837405865.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1964664719;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.827165838">
+<instance id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.10921611;preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.10921611.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1121340367;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.2050433242">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/HAL/inc"/>
 <includePath path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones_bsp/"/>
