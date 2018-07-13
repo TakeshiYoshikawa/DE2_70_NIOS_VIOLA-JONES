@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_processor' in SOPC Builder design 'de2_70'
  * SOPC Builder design path: C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo
  *
- * Generated: Tue Jul 10 11:58:21 GMT-03:00 2018
+ * Generated: Fri Jul 13 11:10:17 GMT-03:00 2018
  */
 
 /*
@@ -287,7 +287,7 @@
 #define SYSID_QSYS_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_NAME "/dev/sysid_qsys"
 #define SYSID_QSYS_SPAN 8
-#define SYSID_QSYS_TIMESTAMP 1531233687
+#define SYSID_QSYS_TIMESTAMP 1531490629
 #define SYSID_QSYS_TYPE "altera_avalon_sysid_qsys"
 
 

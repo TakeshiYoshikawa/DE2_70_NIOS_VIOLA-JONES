@@ -36,13 +36,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="image.c" partName="image.c" path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones/image.c" title="image.c" tooltip="DE2_70_Viola-Jones/image.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="image.c" partName="image.c" path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones/image.c" title="image.c" tooltip="DE2_70_Viola-Jones/image.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DE2_70_Viola-Jones/image.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4398" selectionTopPixel="2643"/>
+<editorState selectionHorizontalPixel="0" selectionLength="167" selectionOffset="4446" selectionTopPixel="2850"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones/main.cpp" title="main.cpp" tooltip="DE2_70_Viola-Jones/main.cpp" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/Eclipse/Software/DE2_70_Viola-Jones/main.cpp" title="main.cpp" tooltip="DE2_70_Viola-Jones/main.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DE2_70_Viola-Jones/main.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1372" selectionTopPixel="465"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1445" selectionTopPixel="645"/>
 </editor>
 </editors>
 <views>
@@ -403,6 +403,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/haar.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/DE2_70_Viola-Jones_bsp/HAL/src/crt0.S"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/image.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/DE2_70_Viola-Jones/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/DE2_70_Viola-Jones_bsp/HAL/src/crt0.S"/>
 </editors>
 <item historyLabel="image.c" index="0">
 <position info="not_deleted" x="776" y="0"/>
@@ -440,8 +443,29 @@
 <item historyLabel="image.c" index="0">
 <position info="not_deleted" x="4398" y="0"/>
 </item>
-<item active="true" historyLabel="main.cpp" index="4">
-<position info="not_deleted" x="1372" y="0"/>
+<item historyLabel="main.cpp" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="image.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="image.c" index="5">
+<position info="not_deleted" x="4604" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="6">
+<position info="not_deleted" x="1617" y="0"/>
+</item>
+<item historyLabel="image.c" index="5">
+<position info="not_deleted" x="4519" y="0"/>
+</item>
+<item historyLabel="crt0.S" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="6">
+<position info="not_deleted" x="1445" y="0"/>
+</item>
+<item active="true" historyLabel="image.c" index="5">
+<position info="not_deleted" x="4519" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

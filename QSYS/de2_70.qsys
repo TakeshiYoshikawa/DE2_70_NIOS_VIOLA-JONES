@@ -286,7 +286,7 @@
  <parameter name="projectName" value="" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1531232552591" />
+ <parameter name="timeStamp" value="1531490599404" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
@@ -479,7 +479,7 @@
    version="13.0"
    enabled="1"
    name="Pixel_Buffer_DMA">
-  <parameter name="addr_mode" value="X-Y" />
+  <parameter name="addr_mode" value="Consecutive" />
   <parameter name="start_address" value="134217728" />
   <parameter name="back_start_address" value="134217728" />
   <parameter name="image_width" value="320" />
@@ -713,7 +713,7 @@
    enabled="1"
    name="Video_DMA">
   <parameter name="mode">From Stream to Memory</parameter>
-  <parameter name="addr_mode" value="X-Y" />
+  <parameter name="addr_mode" value="Consecutive" />
   <parameter name="start_address" value="134217728" />
   <parameter name="back_start_address" value="134217728" />
   <parameter name="width" value="320" />

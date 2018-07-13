@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_processor' in SOPC Builder design 'de2_70'
  * SOPC Builder design path: C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo
  *
- * Generated: Tue Jul 10 11:49:24 GMT-03:00 2018
+ * Generated: Fri Jul 13 08:27:17 GMT-03:00 2018
  */
 
 /*

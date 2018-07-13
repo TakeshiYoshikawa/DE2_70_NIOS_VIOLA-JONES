@@ -36,7 +36,6 @@
 #include <ctype.h>
 #include "image.h"
 #include "stdio-wrapper.h"
-#include <math.h>
 
 char* strrev(char* str)
 {
@@ -201,8 +200,8 @@ int readImage(int x1, int y1, int x2, int y2, MyImage* image){
 
 	for(row = y1; row < y2; row++){
 		for(col = x1; col < x2; col++){
-			//offset = (row << 9) + col;
-			image->data[i] = (unsigned char) *(sram + i);
+			offset = (row << 9) + col;
+			image->data[i] = (unsigned char) *(sram + offset);
 			i++;
 		}
 	}
