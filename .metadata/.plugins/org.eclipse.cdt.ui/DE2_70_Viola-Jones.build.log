@@ -1,0 +1,12 @@
+
+**** Build of configuration Nios II for project DE2_70_Viola-Jones ****
+
+make all 
+/usr/bin/sh: line 0: cd: C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/: No such file or directory
+Info: Building ../DE2_70_Viola-Jones_bsp
+make --no-print-directory -C ../DE2_70_Viola-Jones_bsp
+makefile:562: Warning: SOPC File C:/Users/Francisco/Desktop/DE2_70_NIOS_VIOLA-JONES/QSYS/de2_70.sopcinfo could not be found.
+[BSP build complete]
+[DE2_70_Viola-Jones build complete]
+
+**** Build Finished ****
